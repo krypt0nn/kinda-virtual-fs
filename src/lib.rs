@@ -4,14 +4,6 @@ use std::io::{Error, ErrorKind};
 use std::path::Path;
 use std::env::temp_dir;
 
-fn main() {
-    let mut storage = Storage::default();
-    let entry = Entry::new("Hello, World!");
-
-    storage.add("test 1", "Hello, World!");
-    storage.add("test 2", entry);
-}
-
 #[derive(Debug, Clone)]
 pub struct Entry {
     pub bytes: Vec<u8>,
