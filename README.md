@@ -11,7 +11,7 @@ use kinda_virtual_fs::*;
 
 // File `../assets/icon.png` will be statically linked by the rust compiler
 let storage = Storage::new(HashMap::from([
-    ("icon", include_bytes!("../assets/icon.png"))
+    ("icon".to_string(), Entry::new(include_bytes!("../assets/icon.png").to_vec()))
 ]));
 
 let path = storage.map("icon").unwrap();
