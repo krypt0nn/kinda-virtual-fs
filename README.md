@@ -19,6 +19,6 @@ let path = storage.map("icon").unwrap();
 println!("Icon was saved as {}", path);
 ```
 
-Author: [Nikita Podvirnyy](https://vk.com/technomindlp)
+Author: [Nikita Podvirnyy](https://github.com/krypt0nn)
 
 Licensed under [GNU GPL 3.0](LICENSE)
